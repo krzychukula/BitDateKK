@@ -14,6 +14,7 @@
 		836EBCAA1B389C680023DCEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836EBCA91B389C680023DCEC /* Images.xcassets */; };
 		836EBCAD1B389C680023DCEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 836EBCAB1B389C680023DCEC /* LaunchScreen.xib */; };
 		836EBCB91B389C680023DCEC /* BitDateKKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EBCB81B389C680023DCEC /* BitDateKKTests.swift */; };
+		836EBCC41B3927C00023DCEC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EBCC31B3927C00023DCEC /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		836EBCB21B389C680023DCEC /* BitDateKKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitDateKKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		836EBCB71B389C680023DCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836EBCB81B389C680023DCEC /* BitDateKKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitDateKKTests.swift; sourceTree = "<group>"; };
+		836EBCC31B3927C00023DCEC /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		836EBC9C1B389C680023DCEC /* BitDateKK */ = {
 			isa = PBXGroup;
 			children = (
+				836EBCC21B3927720023DCEC /* Views */,
 				836EBC9F1B389C680023DCEC /* AppDelegate.swift */,
 				836EBCA41B389C680023DCEC /* ViewController.swift */,
 				836EBCA61B389C680023DCEC /* Main.storyboard */,
@@ -113,6 +116,14 @@
 				836EBCB71B389C680023DCEC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		836EBCC21B3927720023DCEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				836EBCC31B3927C00023DCEC /* CardView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 			files = (
 				836EBCA51B389C680023DCEC /* ViewController.swift in Sources */,
 				836EBCA01B389C680023DCEC /* AppDelegate.swift in Sources */,
+				836EBCC41B3927C00023DCEC /* CardView.swift in Sources */,
 				836EBCA31B389C680023DCEC /* BitDateKK.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7D535D0D-4A7F-4E62-992A-26D57575BBFE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4340E28C715AA340A7C6E6908A260F9EFFDE4E63</key>
+		<string>https://github.com/krzychukula/BitDateKK.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BitDateKK.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4340E28C715AA340A7C6E6908A260F9EFFDE4E63</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/krzychukula/BitDateKK.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4340E28C715AA340A7C6E6908A260F9EFFDE4E63</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4340E28C715AA340A7C6E6908A260F9EFFDE4E63</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BitDateKK</string>
+		</dict>
+	</array>
+</dict>
+</plist>
