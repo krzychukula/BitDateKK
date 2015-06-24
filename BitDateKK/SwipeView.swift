@@ -34,10 +34,16 @@ class SwipeView: UIView {
         self.backgroundColor = UIColor.clearColor()
         addSubview(card)
         
+        self.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "dragged:"))
+        
         card.setTranslatesAutoresizingMaskIntoConstraints(false)
         
-        
         setConstraints()
+    }
+    
+    func dragged(gestureRecogniser: UIPanGestureRecognizer) {
+        let distance = gestureRecogniser.translationInView(self)
+        println("Distance x: \(distance.x)  y: \(distance.y)")
     }
     
     private func setConstraints() {
