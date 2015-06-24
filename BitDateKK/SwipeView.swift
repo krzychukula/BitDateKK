@@ -9,7 +9,11 @@
 import Foundation
 import UIKit
 
+
+
 class SwipeView: UIView {
+    
+    weak var delegate: SwipeViewDelegate?
     
     enum Direction {
         case None
@@ -106,4 +110,13 @@ class SwipeView: UIView {
     }
     
     
+}
+
+
+
+
+
+protocol SwipeViewDelegate: class {
+    func swipeLeft()
+    func swipeRight()
 }
