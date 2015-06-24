@@ -21,8 +21,17 @@ class SwipeView: UIView {
         case Right
     }
     
+    var innerView: UIView? {
+        didSet {
+            if let v = innerView {
+                addSubview(v)
+                v.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+            }
+        }
+    }
     
-    private let card: CardView = CardView()
+    
+    //private let card: CardView = CardView()
     
     private var originalPoint: CGPoint?
     
@@ -48,14 +57,14 @@ class SwipeView: UIView {
         self.backgroundColor = UIColor.redColor()
         //TODO:
         //self.backgroundColor = UIColor.clearColor()
-        addSubview(card)
+        //addSubview(card)
         
         self.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "dragged:"))
         
         
-        card.setTranslatesAutoresizingMaskIntoConstraints(false)
+        //card.setTranslatesAutoresizingMaskIntoConstraints(false)
 
-        card.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        //card.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
     }
     
     func dragged(gestureRecogniser: UIPanGestureRecognizer) {
