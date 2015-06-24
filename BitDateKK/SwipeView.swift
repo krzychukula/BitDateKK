@@ -70,7 +70,14 @@ class SwipeView: UIView {
             
             center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
         case UIGestureRecognizerState.Ended:
-            resetViewPositionAndTransformations()
+            
+            if abs(distance.x) < frame.width/4 {
+                resetViewPositionAndTransformations()
+            }else{
+                swipe(distance.x > 0 ? .Right : .Left)
+            }
+            
+            
         default:
             println("Default trigged for GestureRecognizer")
             break
