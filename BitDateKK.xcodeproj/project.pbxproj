@@ -31,6 +31,7 @@
 		836EBCE41B3B40060023DCEC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 836EBCE31B3B40060023DCEC /* libz.dylib */; };
 		836EBCE61B3B40110023DCEC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 836EBCE51B3B40110023DCEC /* libsqlite3.dylib */; };
 		836EBCE81B3B40D20023DCEC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836EBCE71B3B40D20023DCEC /* Bolts.framework */; };
+		836EBCEA1B3BD0940023DCEC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 836EBCE91B3BD0940023DCEC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		836EBCE31B3B40060023DCEC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		836EBCE51B3B40110023DCEC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		836EBCE71B3B40D20023DCEC /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		836EBCE91B3BD0940023DCEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		836EBC911B389C680023DCEC = {
 			isa = PBXGroup;
 			children = (
+				836EBCE91B3BD0940023DCEC /* README.md */,
 				836EBC9C1B389C680023DCEC /* BitDateKK */,
 				836EBCB51B389C680023DCEC /* BitDateKKTests */,
 				836EBC9B1B389C680023DCEC /* Products */,
@@ -307,6 +310,7 @@
 				836EBCA51B389C680023DCEC /* ViewController.swift in Sources */,
 				836EBCA01B389C680023DCEC /* AppDelegate.swift in Sources */,
 				836EBCCB1B3B24770023DCEC /* CardsViewController.swift in Sources */,
+				836EBCEA1B3BD0940023DCEC /* README.md in Sources */,
 				836EBCC41B3927C00023DCEC /* CardView.swift in Sources */,
 				836EBCC61B3B1F8D0023DCEC /* SwipeView.swift in Sources */,
 				836EBCA31B389C680023DCEC /* BitDateKK.xcdatamodeld in Sources */,
