@@ -8,8 +8,11 @@
 
 import UIKit
 import CoreData
-import Bolts
 import Parse
+
+var kAppId:String = ""
+var kClientKey:String = ""
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,9 +27,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // https://parse.com/docs/ios_guide#localdatastore/iOS
         Parse.enableLocalDatastore()
         
+        //MARK: how to hide api keys
+        // http://stackoverflow.com/questions/30803244/how-to-hide-api-keys-in-github-for-ios-swift-projects
+        //MARK: how to read plist
+        //http://stackoverflow.com/questions/24045570/swift-read-plist
+        if let path = NSBundle.mainBundle().pathForResource("Info", ofType: "plist") {
+            println(path)
+            if let dict = NSDictionary(contentsOfFile: path) as? Dictionary<String, AnyObject> {
+                // use swift dictionary as normal
+                kAppId = dict["ParseAppId"] as! String
+                kClientKey = dict["ParseClientKey"] as! String
+            }
+        }
+        
         // Initialize Parse.
-        Parse.setApplicationId("4f8Lo6EQDg0befRYYhNaj9HH2CIcSVlJoBOOFb6F",
-            clientKey: "DJf8banwkeTBQirbXZLaKOx96LiMjzSOGLqivijY")
+        Parse.setApplicationId(kAppId,
+            clientKey: kClientKey)
         
         return true
     }

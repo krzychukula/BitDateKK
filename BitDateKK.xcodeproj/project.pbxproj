@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63B4FA0E31330371F4B79C5F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F6CFB6FEAC4D3E0242D154 /* libPods.a */; };
+		02F73FEFB891D3126DD947F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F0AC610FA807DD060C782D /* libPods.a */; };
 		836EBCA01B389C680023DCEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EBC9F1B389C680023DCEC /* AppDelegate.swift */; };
 		836EBCA31B389C680023DCEC /* BitDateKK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 836EBCA11B389C680023DCEC /* BitDateKK.xcdatamodeld */; };
 		836EBCA51B389C680023DCEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EBCA41B389C680023DCEC /* ViewController.swift */; };
@@ -31,7 +31,6 @@
 		836EBCE21B3B3FFC0023DCEC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836EBCE11B3B3FFC0023DCEC /* SystemConfiguration.framework */; };
 		836EBCE41B3B40060023DCEC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 836EBCE31B3B40060023DCEC /* libz.dylib */; };
 		836EBCE61B3B40110023DCEC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 836EBCE51B3B40110023DCEC /* libsqlite3.dylib */; };
-		836EBCE81B3B40D20023DCEC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836EBCE71B3B40D20023DCEC /* Bolts.framework */; };
 		836EBCEA1B3BD0940023DCEC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 836EBCE91B3BD0940023DCEC /* README.md */; };
 		836EBCEC1B3BD3AE0023DCEC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 836EBCEB1B3BD3AE0023DCEC /* Podfile */; };
 /* End PBXBuildFile section */
@@ -75,11 +74,11 @@
 		836EBCE11B3B3FFC0023DCEC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		836EBCE31B3B40060023DCEC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		836EBCE51B3B40110023DCEC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		836EBCE71B3B40D20023DCEC /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		836EBCE91B3BD0940023DCEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		836EBCEB1B3BD3AE0023DCEC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		83C1D25C1B3C97B00043646E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		8483E5C797B7ADD0A7DCE074 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		F1F6CFB6FEAC4D3E0242D154 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F0AC610FA807DD060C782D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +99,7 @@
 				836EBCD21B3B3FBD0023DCEC /* AudioToolbox.framework in Frameworks */,
 				836EBCD01B3B3F6D0023DCEC /* ParseFacebookUtils.framework in Frameworks */,
 				836EBCCF1B3B3F6D0023DCEC /* Parse.framework in Frameworks */,
-				836EBCE81B3B40D20023DCEC /* Bolts.framework in Frameworks */,
-				63B4FA0E31330371F4B79C5F /* libPods.a in Frameworks */,
+				02F73FEFB891D3126DD947F9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				836EBC9E1B389C680023DCEC /* Info.plist */,
+				83C1D25C1B3C97B00043646E /* Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -208,7 +207,6 @@
 		836EBCCC1B3B3F1E0023DCEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				836EBCE71B3B40D20023DCEC /* Bolts.framework */,
 				836EBCE51B3B40110023DCEC /* libsqlite3.dylib */,
 				836EBCE31B3B40060023DCEC /* libz.dylib */,
 				836EBCE11B3B3FFC0023DCEC /* SystemConfiguration.framework */,
@@ -229,7 +227,7 @@
 		AB95A0D7C96840B1DE7B13FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F1F6CFB6FEAC4D3E0242D154 /* libPods.a */,
+				C9F0AC610FA807DD060C782D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -513,6 +511,7 @@
 				INFOPLIST_FILE = BitDateKK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BitDateKK/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -528,6 +527,7 @@
 				INFOPLIST_FILE = BitDateKK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BitDateKK/Bridging-Header.h";
 			};
 			name = Release;
 		};
