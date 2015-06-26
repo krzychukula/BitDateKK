@@ -44,6 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId(kAppId,
             clientKey: kClientKey)
         
+        PFFacebookUtils.initializeFacebook()
+        
         return true
     }
     
