@@ -33,6 +33,7 @@
 		836EBCE61B3B40110023DCEC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 836EBCE51B3B40110023DCEC /* libsqlite3.dylib */; };
 		836EBCEA1B3BD0940023DCEC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 836EBCE91B3BD0940023DCEC /* README.md */; };
 		836EBCEC1B3BD3AE0023DCEC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 836EBCEB1B3BD3AE0023DCEC /* Podfile */; };
+		83C1D25E1B3D26DA0043646E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1D25D1B3D26DA0043646E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		836EBCE91B3BD0940023DCEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		836EBCEB1B3BD3AE0023DCEC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		83C1D25C1B3C97B00043646E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		83C1D25D1B3D26DA0043646E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8483E5C797B7ADD0A7DCE074 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C9F0AC610FA807DD060C782D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				836EBCA41B389C680023DCEC /* ViewController.swift */,
+				83C1D25D1B3D26DA0043646E /* LoginViewController.swift */,
 				836EBCCA1B3B24770023DCEC /* CardsViewController.swift */,
 			);
 			name = ViewControllers;
@@ -372,6 +375,7 @@
 				836EBCA01B389C680023DCEC /* AppDelegate.swift in Sources */,
 				836EBCCB1B3B24770023DCEC /* CardsViewController.swift in Sources */,
 				836EBCEA1B3BD0940023DCEC /* README.md in Sources */,
+				83C1D25E1B3D26DA0043646E /* LoginViewController.swift in Sources */,
 				836EBCC41B3927C00023DCEC /* CardView.swift in Sources */,
 				836EBCC61B3B1F8D0023DCEC /* SwipeView.swift in Sources */,
 				836EBCA31B389C680023DCEC /* BitDateKK.xcdatamodeld in Sources */,
