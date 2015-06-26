@@ -93,7 +93,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ocW-KM-bZo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SeD-cy-fbD" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CardsNavController" automaticallyAdjustsScrollViewInsets="NO" id="SeD-cy-fbD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Deo-dJ-nS6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -28,6 +28,8 @@ class LoginViewController: UIViewController {
             
             if user == nil {
                 println("user canceled facebook login")
+                //TODO: alert about it
+                return
             }else if user!.isNew {
                 
                 if let user = user {
@@ -59,7 +61,12 @@ class LoginViewController: UIViewController {
                 
             }else{
                 println("user logged in through facebook")
+                
             }
+            
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("CardsNavController") as! UIViewController
+            self.presentViewController(vc, animated: true, completion: nil)
+            
         })
         
     }
