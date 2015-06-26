@@ -60,7 +60,7 @@
         <!--Login View Controller-->
         <scene sceneID="IzA-3l-kq8">
             <objects>
-                <viewController id="Bog-di-a2H" customClass="LoginViewController" customModule="BitDateKK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Bog-di-a2H" customClass="LoginViewController" customModule="BitDateKK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sni-Vb-4Md"/>
                         <viewControllerLayoutGuide type="bottom" id="TAQ-cm-kV8"/>
