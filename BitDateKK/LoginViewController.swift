@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
 
@@ -28,7 +29,34 @@ class LoginViewController: UIViewController {
             if user == nil {
                 println("user canceled facebook login")
             }else if user!.isNew {
-                println("user signed up and logged in through facebook")
+                
+                if let user = user {
+                    println("user signed up and logged in through facebook")
+                    
+                    FBRequestConnection.startWithGraphPath("/me?fields=picture,first_name,birthday,gender", completionHandler: { connection, result, error in
+                        
+                    
+                        if let r = result as? NSDictionary {
+                            //var r = result as! NSDictionary
+                            user["firstName"] = r["first_name"]
+                            user["gender"] = r["gender"]
+                            
+                            user["picture"] = ((r["picture"] as! NSDictionary)["data"] as! NSDictionary)["url"]
+                            
+                            var dateFormatter = NSDateFormatter()
+                            dateFormatter.dateFormat = "dd/MM/yyyy"
+                            user["birthday"] = dateFormatter.dateFromString(r["birthday"] as! String)
+                            user.saveInBackgroundWithBlock({
+                                success, error in
+                                println(success)
+                                println(error)
+                            })
+                        }
+                        
+                    })
+                }
+
+                
             }else{
                 println("user logged in through facebook")
             }
