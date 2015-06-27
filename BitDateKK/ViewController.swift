@@ -11,6 +11,12 @@ import UIKit
 class ViewController:
     UIPageViewController,
     UIPageViewControllerDataSource {
+    
+    let cardsVC: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("CardsNavController") as! UIViewController
+    
+    let profileVC: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileNavController") as! UIViewController
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +24,9 @@ class ViewController:
         
         view.backgroundColor = UIColor.whiteColor()
         self.dataSource = self
+        
+        self.setViewControllers([cardsVC], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,11 +38,26 @@ class ViewController:
     //MARK: UIPageViewControllerDataSource
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         
-        return nil
+        switch viewController {
+        case cardsVC:
+            return profileVC
+        case profileVC:
+            return nil
+        default:
+            return nil
+        }
+        
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        return nil
+        switch viewController {
+        case profileVC:
+            return cardsVC
+        case cardsVC:
+            return nil
+        default:
+            return nil
+        }
     }
 }
 
