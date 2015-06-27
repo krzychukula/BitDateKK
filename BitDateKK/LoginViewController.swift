@@ -48,11 +48,22 @@ class LoginViewController: UIViewController {
                             var dateFormatter = NSDateFormatter()
                             dateFormatter.dateFormat = "dd/MM/yyyy"
                             user["birthday"] = dateFormatter.dateFromString(r["birthday"] as! String)
-                            user.saveInBackgroundWithBlock({
-                                success, error in
-                                println(success)
-                                println(error)
+                            
+                            let pictureUrl: String = ((r["picture"] as! NSDictionary)["data"] as! NSDictionary)["url"] as! String
+                            
+                            let url = NSURL(string: pictureUrl)
+                            let request = NSURLRequest(URL: url!)
+                            
+                            NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {
+                                response, data, error in
+                                
+                                let imageFile = PFFile(name: "avatar.jpg", data: data)
+                                user["picture"] = imageFile
+                                user.saveInBackgroundWithBlock(nil)
                             })
+                            
+                            
+
                         }
                         
                     })
