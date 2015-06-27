@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController:
+    UIPageViewController,
+    UIPageViewControllerDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.addSubview(CardView(frame: CGRectMake(80.0, 40.0, 180.0, 300.0)))
+        view.backgroundColor = UIColor.whiteColor()
+        self.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,5 +26,14 @@ class ViewController: UIViewController {
     }
 
 
+    //MARK: UIPageViewControllerDataSource
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+        
+        return nil
+    }
+    
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+        return nil
+    }
 }
 
