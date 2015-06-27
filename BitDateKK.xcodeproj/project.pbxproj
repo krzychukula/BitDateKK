@@ -35,6 +35,7 @@
 		836EBCEC1B3BD3AE0023DCEC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 836EBCEB1B3BD3AE0023DCEC /* Podfile */; };
 		83C1D25E1B3D26DA0043646E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1D25D1B3D26DA0043646E /* LoginViewController.swift */; };
 		83C1D2611B3DCD270043646E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1D2601B3DCD270043646E /* User.swift */; };
+		83C1D2631B3EDA250043646E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1D2621B3EDA250043646E /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		83C1D25C1B3C97B00043646E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		83C1D25D1B3D26DA0043646E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83C1D2601B3DCD270043646E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		83C1D2621B3EDA250043646E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8483E5C797B7ADD0A7DCE074 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C9F0AC610FA807DD060C782D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -206,6 +208,7 @@
 				836EBCA41B389C680023DCEC /* ViewController.swift */,
 				83C1D25D1B3D26DA0043646E /* LoginViewController.swift */,
 				836EBCCA1B3B24770023DCEC /* CardsViewController.swift */,
+				83C1D2621B3EDA250043646E /* ProfileViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 			files = (
 				836EBCA51B389C680023DCEC /* ViewController.swift in Sources */,
 				836EBCA01B389C680023DCEC /* AppDelegate.swift in Sources */,
+				83C1D2631B3EDA250043646E /* ProfileViewController.swift in Sources */,
 				836EBCCB1B3B24770023DCEC /* CardsViewController.swift in Sources */,
 				836EBCEA1B3BD0940023DCEC /* README.md in Sources */,
 				83C1D25E1B3D26DA0043646E /* LoginViewController.swift in Sources */,
