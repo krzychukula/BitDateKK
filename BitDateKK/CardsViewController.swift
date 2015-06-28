@@ -45,6 +45,14 @@ class CardsViewController: UIViewController,
 //            println("Object has been saved.")
 //        }
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationItem.titleView = UIImageView(image: UIImage(named: "nav-header"))
+        let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav-back-button"), style: .Plain, target: self, action: "goToProfile:")
+        self.navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -62,6 +70,10 @@ class CardsViewController: UIViewController,
         swipeView.delegate = self
         swipeView.innerView = cardView
         return Card(cardView: cardView, swipeView: swipeView)
+    }
+    
+    func goToProfile(button: UIBarButtonItem){
+        
     }
     
     //MARK: SwipeViewDelegate
