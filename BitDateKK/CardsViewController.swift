@@ -93,6 +93,20 @@ class CardsViewController: UIViewController,
         return nil
     }
     
+    private func switchCards(){
+        if let card = backCard {
+            frontCard = card
+            UIView.animateWithDuration(0.2, animations: { () -> Void in
+                self.frontCard!.swipeView.frame = self.createCardFrame(self.frontCardTopMargin)
+            })
+        }
+        if let card = self.popCard() {
+            self.backCard = card
+            self.backCard?.swipeView.frame = self.createCardFrame(self.backCardTopMardin)
+            self.cardStackView.insertSubview(self.backCard!.swipeView, belowSubview: self.frontCard!.swipeView)
+        }
+    }
+    
     func goToProfile(button: UIBarButtonItem){
         pageController.goToPreviousVC()
     }
@@ -102,6 +116,8 @@ class CardsViewController: UIViewController,
         println("left")
         if let frontCard = frontCard {
             frontCard.swipeView.removeFromSuperview()
+            
+            switchCards()
         }
     }
     
@@ -110,6 +126,8 @@ class CardsViewController: UIViewController,
         
         if let frontCard = frontCard {
             frontCard.swipeView.removeFromSuperview()
+            
+            switchCards()
         }
     }
 
