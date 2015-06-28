@@ -41,7 +41,7 @@ class ProfileViewController: UIViewController {
     }
     
     func goToCards(button: UIBarButtonItem){
-        
+        pageController.goToNextVC()
     }
 
 
