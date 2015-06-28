@@ -32,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //MARK: how to read plist
         //http://stackoverflow.com/questions/24045570/swift-read-plist
         if let path = NSBundle.mainBundle().pathForResource("Info", ofType: "plist") {
-            println(path)
             if let dict = NSDictionary(contentsOfFile: path) as? Dictionary<String, AnyObject> {
                 // use swift dictionary as normal
                 kAppId = dict["ParseAppId"] as! String
