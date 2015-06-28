@@ -125,11 +125,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ewj-Kv-Tfi" customClass="UserCell" customModule="BitDateKK" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="ewj-Kv-Tfi" customClass="UserCell" customModule="BitDateKK" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ewj-Kv-Tfi" id="tHJ-Sw-kUW">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pUu-uE-Sov">
+                                            <rect key="frame" x="8" y="3" width="75" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="Ofs-el-cXP"/>
+                                                <constraint firstAttribute="height" constant="75" id="OyF-Y0-gT8"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5x-hI-G0l">
+                                            <rect key="frame" x="91" y="30" width="501" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="g5x-hI-G0l" firstAttribute="leading" secondItem="pUu-uE-Sov" secondAttribute="trailing" constant="8" id="FhP-o2-M4J"/>
+                                        <constraint firstItem="g5x-hI-G0l" firstAttribute="top" secondItem="tHJ-Sw-kUW" secondAttribute="topMargin" constant="22" id="XVK-0r-hvm"/>
+                                        <constraint firstItem="pUu-uE-Sov" firstAttribute="top" secondItem="tHJ-Sw-kUW" secondAttribute="topMargin" constant="-5" id="dZ7-AW-GF6"/>
+                                        <constraint firstItem="g5x-hI-G0l" firstAttribute="trailing" secondItem="tHJ-Sw-kUW" secondAttribute="trailingMargin" id="uH6-Sf-Jmq"/>
+                                        <constraint firstItem="pUu-uE-Sov" firstAttribute="leading" secondItem="tHJ-Sw-kUW" secondAttribute="leadingMargin" id="vwb-aT-6Xw"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="avatarImageView" destination="pUu-uE-Sov" id="rKf-Ml-1oE"/>
+                                    <outlet property="nameLabel" destination="g5x-hI-G0l" id="VQG-qG-wxO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -146,7 +172,7 @@
         <!--Navigation Controller-->
         <scene sceneID="hha-Dq-mHi">
             <objects>
-                <navigationController id="5Hs-ox-HGx" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MatchesNavController" id="5Hs-ox-HGx" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LoL-hZ-4zV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
