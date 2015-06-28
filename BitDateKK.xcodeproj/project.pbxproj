@@ -33,6 +33,8 @@
 		836EBCE61B3B40110023DCEC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 836EBCE51B3B40110023DCEC /* libsqlite3.dylib */; };
 		836EBCEA1B3BD0940023DCEC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 836EBCE91B3BD0940023DCEC /* README.md */; };
 		836EBCEC1B3BD3AE0023DCEC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 836EBCEB1B3BD3AE0023DCEC /* Podfile */; };
+		8394C4581B3FEFF6008FBC7C /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394C4571B3FEFF6008FBC7C /* MatchesTableViewController.swift */; };
+		8394C45A1B3FF0C0008FBC7C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394C4591B3FF0C0008FBC7C /* UserCell.swift */; };
 		83C1D25E1B3D26DA0043646E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1D25D1B3D26DA0043646E /* LoginViewController.swift */; };
 		83C1D2611B3DCD270043646E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1D2601B3DCD270043646E /* User.swift */; };
 		83C1D2631B3EDA250043646E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1D2621B3EDA250043646E /* ProfileViewController.swift */; };
@@ -79,6 +81,8 @@
 		836EBCE51B3B40110023DCEC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		836EBCE91B3BD0940023DCEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		836EBCEB1B3BD3AE0023DCEC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8394C4571B3FEFF6008FBC7C /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
+		8394C4591B3FF0C0008FBC7C /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		83C1D25C1B3C97B00043646E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		83C1D25D1B3D26DA0043646E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83C1D2601B3DCD270043646E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 			children = (
 				836EBCC31B3927C00023DCEC /* CardView.swift */,
 				836EBCC51B3B1F8D0023DCEC /* SwipeView.swift */,
+				8394C4591B3FF0C0008FBC7C /* UserCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 				83C1D25D1B3D26DA0043646E /* LoginViewController.swift */,
 				836EBCCA1B3B24770023DCEC /* CardsViewController.swift */,
 				83C1D2621B3EDA250043646E /* ProfileViewController.swift */,
+				8394C4571B3FEFF6008FBC7C /* MatchesTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -385,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8394C4581B3FEFF6008FBC7C /* MatchesTableViewController.swift in Sources */,
 				836EBCA51B389C680023DCEC /* ViewController.swift in Sources */,
 				836EBCA01B389C680023DCEC /* AppDelegate.swift in Sources */,
 				83C1D2631B3EDA250043646E /* ProfileViewController.swift in Sources */,
@@ -392,6 +399,7 @@
 				836EBCEA1B3BD0940023DCEC /* README.md in Sources */,
 				83C1D25E1B3D26DA0043646E /* LoginViewController.swift in Sources */,
 				83C1D2611B3DCD270043646E /* User.swift in Sources */,
+				8394C45A1B3FF0C0008FBC7C /* UserCell.swift in Sources */,
 				836EBCC41B3927C00023DCEC /* CardView.swift in Sources */,
 				836EBCC61B3B1F8D0023DCEC /* SwipeView.swift in Sources */,
 				836EBCA31B389C680023DCEC /* BitDateKK.xcdatamodeld in Sources */,
