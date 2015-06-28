@@ -40,6 +40,9 @@
 		83C1D25E1B3D26DA0043646E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1D25D1B3D26DA0043646E /* LoginViewController.swift */; };
 		83C1D2611B3DCD270043646E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1D2601B3DCD270043646E /* User.swift */; };
 		83C1D2631B3EDA250043646E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1D2621B3EDA250043646E /* ProfileViewController.swift */; };
+		83EE16871B4013D400BBDACE /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EE16861B4013D400BBDACE /* libicucore.dylib */; };
+		83EE16891B4013E000BBDACE /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EE16881B4013E000BBDACE /* libc++.dylib */; };
+		83EE168B1B40141500BBDACE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE168A1B40141500BBDACE /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,9 @@
 		83C1D25D1B3D26DA0043646E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83C1D2601B3DCD270043646E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		83C1D2621B3EDA250043646E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		83EE16861B4013D400BBDACE /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		83EE16881B4013E000BBDACE /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		83EE168A1B40141500BBDACE /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8483E5C797B7ADD0A7DCE074 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C9F0AC610FA807DD060C782D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EE16891B4013E000BBDACE /* libc++.dylib in Frameworks */,
+				83EE16871B4013D400BBDACE /* libicucore.dylib in Frameworks */,
 				836EBCE61B3B40110023DCEC /* libsqlite3.dylib in Frameworks */,
 				836EBCE41B3B40060023DCEC /* libz.dylib in Frameworks */,
 				836EBCE21B3B3FFC0023DCEC /* SystemConfiguration.framework in Frameworks */,
@@ -249,6 +257,7 @@
 			children = (
 				83C1D2601B3DCD270043646E /* User.swift */,
 				8394C45B1B3FF8C3008FBC7C /* Match.swift */,
+				83EE168A1B40141500BBDACE /* Message.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -256,6 +265,8 @@
 		AB95A0D7C96840B1DE7B13FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83EE16881B4013E000BBDACE /* libc++.dylib */,
+				83EE16861B4013D400BBDACE /* libicucore.dylib */,
 				C9F0AC610FA807DD060C782D /* libPods.a */,
 			);
 			name = Frameworks;
@@ -409,6 +420,7 @@
 				8394C45C1B3FF8C3008FBC7C /* Match.swift in Sources */,
 				834AE3E31B400850006488BB /* ChatViewController.swift in Sources */,
 				836EBCC41B3927C00023DCEC /* CardView.swift in Sources */,
+				83EE168B1B40141500BBDACE /* Message.swift in Sources */,
 				836EBCC61B3B1F8D0023DCEC /* SwipeView.swift in Sources */,
 				836EBCA31B389C680023DCEC /* BitDateKK.xcdatamodeld in Sources */,
 			);

@@ -12,6 +12,7 @@ import Parse
 
 var kAppId:String = ""
 var kClientKey:String = ""
+var kFirebaseUrl = ""
 
 
 @UIApplicationMain
@@ -36,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 // use swift dictionary as normal
                 kAppId = dict["ParseAppId"] as! String
                 kClientKey = dict["ParseClientKey"] as! String
+                kFirebaseUrl = dict["FirebaseURL"] as! String
             }
         }
         
