@@ -27,7 +27,7 @@ struct User {
     }
 }
 
-private func pfUserToUser(user: PFUser) -> User {
+func pfUserToUser(user: PFUser) -> User {
     return User(id: user.objectId!, name: user.objectForKey("firstName") as! String, pfUser: user)
 }
 

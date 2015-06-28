@@ -18,6 +18,7 @@ class ViewController:
     
     let profileVC: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileNavController") as! UIViewController
     
+    let matchesVC: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MatchesNavController") as! UIViewController
     
 
     override func viewDidLoad() {
@@ -53,6 +54,8 @@ class ViewController:
         switch viewController {
         case cardsVC:
             return profileVC
+        case matchesVC:
+            return cardsVC
         case profileVC:
             return nil
         default:
@@ -66,7 +69,7 @@ class ViewController:
         case profileVC:
             return cardsVC
         case cardsVC:
-            return nil
+            return matchesVC
         default:
             return nil
         }
