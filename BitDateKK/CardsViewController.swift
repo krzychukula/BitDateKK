@@ -22,6 +22,8 @@ class CardsViewController: UIViewController,
     let backCardTopMardin: CGFloat = 10
     
     @IBOutlet weak var cardStackView: UIView!
+    @IBOutlet weak var nahButton: UIButton!
+    @IBOutlet weak var yeahButton: UIButton!
     
     var backCard: Card?
     var frontCard: Card?
@@ -51,6 +53,9 @@ class CardsViewController: UIViewController,
             }
             
         })
+        
+        nahButton.setImage(UIImage(named: "nah-button-pressed"), forState: UIControlState.Highlighted)
+        yeahButton.setImage(UIImage(named: "yeah-button-pressed"), forState: UIControlState.Highlighted)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -64,6 +69,18 @@ class CardsViewController: UIViewController,
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func nahButtonPressed(sender: UIButton) {
+        
+        if let card = frontCard {
+            card.swipeView.swipe(SwipeView.Direction.Left)
+        }
+    }
+    @IBAction func yeahButtonPressed(sender: UIButton) {
+        if let card = frontCard {
+            card.swipeView.swipe(SwipeView.Direction.Right)
+        }
     }
     
 
