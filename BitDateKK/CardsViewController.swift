@@ -24,6 +24,8 @@ class CardsViewController: UIViewController,
     
     var backCard: Card?
     var frontCard: Card?
+    
+    var users: [User]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,11 +41,10 @@ class CardsViewController: UIViewController,
         cardStackView.addSubview(frontCard!.swipeView)
         
         
-//        let testObject = PFObject(className: "TestObject")
-//        testObject["foo"] = "bar"
-//        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-//            println("Object has been saved.")
-//        }
+        fetchUnviewedUsers({ users in
+            self.users = users
+            println(self.users)
+        })
     }
     
     override func viewWillAppear(animated: Bool) {
