@@ -39,24 +39,57 @@ func currentUser() -> User? {
 }
 
 func fetchUnviewedUsers(callback: ([User]) -> () ) {
-    var query = PFUser.query()
-    query!.whereKey("objectId", notEqualTo: PFUser.currentUser()!.objectId!)
-    query!.findObjectsInBackgroundWithBlock({
-        objects, error in
+    
+    let currentUserId = PFUser.currentUser()!.objectId!
+    
+    var query = PFQuery(className: "Action")
+    query.whereKey("byUser", equalTo: currentUserId)
+    query.findObjectsInBackgroundWithBlock({ (results, error) -> Void in
+        let seenIDS = map(results!, { $0.objectForKey("toUser")! })
         
-        if let pfUsers = objects as? [PFUser] {
-            let users = map(pfUsers, { pfUserToUser($0) })
-            callback(users)
-        }
+        var query = PFUser.query()
+        query!.whereKey("objectId", notEqualTo: PFUser.currentUser()!.objectId!)
+        query!.whereKey("objectId", notContainedIn: seenIDS)
+        query!.findObjectsInBackgroundWithBlock({
+            objects, error in
+            
+            if let pfUsers = objects as? [PFUser] {
+                let users = map(pfUsers, {pfUserToUser($0)})
+                callback(users)
+            }
+        })
         
     })
+    
+    return
+    
+    
+//    var query = PFUser.query()
+//    query!.whereKey("objectId", notEqualTo: PFUser.currentUser()!.objectId!)
+//    query!.findObjectsInBackgroundWithBlock({
+//        objects, error in
+//        
+//        if let pfUsers = objects as? [PFUser] {
+//            let users = map(pfUsers, { pfUserToUser($0) })
+//            callback(users)
+//        }
+//        
+//    })
 }
 
 func saveSkip(user: User){
+    saveAction(user, "skipped")
+}
+
+func saveLiked(user: User){
+    saveAction(user, "liked")
+}
+
+private func saveAction(user: User, type: String){
     let skip = PFObject(className: "Action")
     skip.setObject(PFUser.currentUser()!.objectId!, forKey: "byUser")
     skip.setObject(user.id, forKey: "toUser")
-    skip.setObject("skipped", forKey: "type")
+    skip.setObject(type, forKey: "type")
     skip.saveInBackgroundWithBlock(nil)
 }
 
