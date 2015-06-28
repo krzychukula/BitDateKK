@@ -19,7 +19,7 @@ func fetchMatches (callback: ([Match]) -> ()) {
     query.whereKey("byUser", equalTo: PFUser.currentUser()!.objectId!)
     query.whereKey("type", equalTo: "matched")
     query.findObjectsInBackgroundWithBlock { (results, error) -> Void in
-        println(results)
+
         if let matches = results as? [PFObject] {
 
             var matchedUsers: [(matchID: String, userID: String)] = []
@@ -29,7 +29,6 @@ func fetchMatches (callback: ([Match]) -> ()) {
             }
             let userIDs = matchedUsers.map({$0.userID});
             
-            println(userIDs)
 
             var query = PFUser.query()
             query!.whereKey("objectId", containedIn: userIDs)
@@ -42,7 +41,7 @@ func fetchMatches (callback: ([Match]) -> ()) {
                     for (index, user) in enumerate(users) {
                         m.append(Match(id: matchedUsers[index].matchID, user: pfUserToUser(user)))
                     }
-                    println(m)
+                    
                     callback(m)
                 }
             })

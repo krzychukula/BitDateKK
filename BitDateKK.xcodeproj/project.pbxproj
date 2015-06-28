@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02F73FEFB891D3126DD947F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F0AC610FA807DD060C782D /* libPods.a */; };
+		834AE3E31B400850006488BB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AE3E21B400850006488BB /* ChatViewController.swift */; };
 		836EBCA01B389C680023DCEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EBC9F1B389C680023DCEC /* AppDelegate.swift */; };
 		836EBCA31B389C680023DCEC /* BitDateKK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 836EBCA11B389C680023DCEC /* BitDateKK.xcdatamodeld */; };
 		836EBCA51B389C680023DCEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EBCA41B389C680023DCEC /* ViewController.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		6FF372822A5564EB7E1B492B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		834AE3E21B400850006488BB /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		836EBC9A1B389C680023DCEC /* BitDateKK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitDateKK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836EBC9E1B389C680023DCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836EBC9F1B389C680023DCEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				836EBCCA1B3B24770023DCEC /* CardsViewController.swift */,
 				83C1D2621B3EDA250043646E /* ProfileViewController.swift */,
 				8394C4571B3FEFF6008FBC7C /* MatchesTableViewController.swift */,
+				834AE3E21B400850006488BB /* ChatViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				83C1D2611B3DCD270043646E /* User.swift in Sources */,
 				8394C45A1B3FF0C0008FBC7C /* UserCell.swift in Sources */,
 				8394C45C1B3FF8C3008FBC7C /* Match.swift in Sources */,
+				834AE3E31B400850006488BB /* ChatViewController.swift in Sources */,
 				836EBCC41B3927C00023DCEC /* CardView.swift in Sources */,
 				836EBCC61B3B1F8D0023DCEC /* SwipeView.swift in Sources */,
 				836EBCA31B389C680023DCEC /* BitDateKK.xcdatamodeld in Sources */,
